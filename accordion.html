@@ -1,0 +1,123 @@
+<?php
+     $server='localhost';
+     $username='root';
+     $password='';
+ 
+     $conn=mysqli_connect($server,$username,$password,'test');
+     if(!$conn){
+         die("Connection failed due to".mysqli_connect_error());
+     }
+?>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs</title>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="style-accordion.css">
+
+</head>
+
+<body>
+    <h1>Frequently Asked Questions</h1>
+    <p id="below-heading">We are constantly trying to simplify the ABSLI DigiShield Plan!</p>
+    <div class="accordion">
+        <div class="accordion-item">
+            <h3 class="accordion-header" id="abc">What are the significant features of the ABSLI DigiShield Plan?<i class="arrow-down"></i></h3>
+            <div class="data">
+                <p class="data-content">
+                    10 Plan Options to suit varied protection need.
+                    Flexibility to choose term cover as per the need. Coverage up to 100 years is available.
+                    Ensure financial stability for the dependents in the absence of life insured with multiple payout options - lump-sum, monthly income or a combination of both.
+                    Unique benefit – Receive Survival Income in a Term Plan – Guaranteed Monthly payouts post attaining Age 60 years for a stress-free retired life.
+                    Get all your premium back with Return of Premium (ROP) option in case you outlive the policy term.
+                    Acceleration of base sum assured in the event of diagnosis of any Terminal Illness.
+                    Acceleration of Critical Illness sum assured through Accelerated Critical Illness Benefit option (ACI) where a lumpsum payout will be made to the life insured on diagnosis of any one of the covered 42 critical illness.
+                    Include your loved one’s in the policy with Joint Life Protection option.
+                    Additional protection through multiple Riders
+                </p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h3 class="accordion-header">
+                What is the classification for lives to be assured under this plan?
+                    <i class="arrow-down"></i></h3>
+            <div class="data">
+                <p class="data-content">
+                    Depending upon the smoking status of the life insured, he/she will be classified as Non-Smoker or Smoker. The proposed life insured will be classified as Non-Smoker, if he/she has not consumed tobacco products in the last 12 months. This includes any nicotine products like cigarette, cigars, chewable tobacco or any other classified stimulants.
+                </p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h3 class="accordion-header">Can I change the plan option anytime during the term?<i class="arrow-down"></i>
+            </h3>
+            <div class="data">
+                <p class="data-content">
+                    No, Plan Option once chosen at inception; cannot be changed anytime during the Policy Term.
+                </p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h3 class="accordion-header">What is Retirement Age?<i class="arrow-down"></i></h3>
+            <div class="data">
+                <p class="data-content">
+                    Retirement Age is applicable under Plan Option 3 Sum Assured Reduction Option and Plan Option 5 Whole Life Option (Sum Assured Reduction Cover). Policyholder has the option to select 60 years, 65 years, 70 years or 75 years as Retirement Age at inception, at which the Sum Assured reduces by the chosen Sum Assured Reduction Rate. The Retirement Age should be at least 10 years more than the age of the Life Insured at inception of the policy and less than the maturity age.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h3 class="accordion-header">
+                What is the Income Benefit Period?
+                <i class="arrow-down"></i></h3>
+            <div class="data">
+                <p class="data-content">
+                    Income Benefit Period is applicable under Plan Option 6 Income Benefit, during which the monthly installments are paid to the Nominee after the death of the Life Insured. Policyholder has the option to select 10 years, 15 years or 20 years as Income Benefit Period at inception.
+                </p>
+            </div>
+        </div>
+        <div class="accordion-item hide">
+            <h3 class="accordion-header">
+                What is the Terminal Illness Benefit?
+                <i class="arrow-down"></i></h3>
+            <div class="data">
+                <p class="data-content">
+                    This is inbuilt benefit available under all Plan Options. In case life insured is diagnosed with a Terminal Illness up to an age of 80 years, while the policy is in force, 50% of the applicable Sum Assured on Death, subject to a maximum of Rs. 2 crores will be paid immediately as a lump-sum and future due premiums shall be waived off. On subsequent death of the Life Insured during the Policy Term, the Sum Assured on Death shall be reduced by the amount of Terminal Illness Benefit already paid. Terminal Illness Benefit shall only be payable on the first diagnosis of any Terminal Illness of the Life Insured during the policy term.
+                </p>
+            </div>
+        </div>
+        <div class="accordion-item hide">
+            <h3 class="accordion-header">
+                What is Accelerated Critical Illness Benefit?
+                <i class="arrow-down"></i></h3>
+            <div class="data">
+                <p class="data-content">
+                Accelerated Critical Illness (ACI) Benefit is an optional benefit, where Policyholder can avail protection against 42 listed critical illness during the ACI Cover Period, on payment of additional premium. On diagnosis of any of the specified critical illnesses, Accelerated Critical Illness (ACI) Sum Assured will be payable to Policyholder, provided the Policy is in-force and meets the required ACI terms and conditions. The ACI Benefit is accelerated and not an additional benefit i.e. Policy will continue with death cover till maturity after the ACI benefit is paid, provided the Policy is in-force and all premiums are paid in full.
+                </p>
+            </div>
+        </div>
+        <div class="accordion-item hide">
+            <h3 class="accordion-header">
+                Which Critical Illnesses are covered under ACI Benefit?
+                <i class="arrow-down"></i></h3>
+            <div class="data">
+                <p class="data-content">
+                    Please refer product brochure for definition of the listed critical illnesses.
+                </p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <span id="showAll">Show All</span>
+
+    <script src="accordion.js"></script>
+
+</body>
+
+</html>
